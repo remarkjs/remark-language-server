@@ -13,14 +13,14 @@
     "index.js"
   ],
   "keywords": [
-    "unified",
-    "remark",
-    "markdown",
-    "mdast",
-    "lsp",
     "languageserver",
     "language server",
-    "cli"
+    "lsp",
+    "cli",
+    "markdown",
+    "mdast",
+    "remark",
+    "unified"
   ],
   "scripts": {
     "build": "tsc && type-coverage",
