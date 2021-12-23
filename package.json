@@ -1,6 +1,6 @@
 {
   "name": "remark-language-server",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Language server for markdown using remark",
   "homepage": "https://remark.js.org",
   "repository": "https://github.com/remarkjs/remark/tree/main/packages/remark-language-server",
