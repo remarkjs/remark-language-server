@@ -2,16 +2,7 @@
   "name": "remark-language-server",
   "version": "0.0.0",
   "description": "Language server for markdown using remark",
-  "homepage": "https://remark.js.org",
-  "repository": "https://github.com/remarkjs/remark/tree/main/packages/remark-language-server",
-  "bugs": "https://github.com/remarkjs/remark-language-serve/issues",
-  "bin": "index.js",
-  "author": "Remco Haszing <remcohaszing@gmail.com>",
   "license": "MIT",
-  "type": "module",
-  "files": [
-    "index.js"
-  ],
   "keywords": [
     "languageserver",
     "language server",
@@ -22,6 +13,23 @@
     "remark",
     "unified"
   ],
+  "repository": "https://github.com/remarkjs/remark/tree/main/packages/remark-language-server",
+  "bugs": "https://github.com/remarkjs/remark-language-serve/issues",
+  "author": "Remco Haszing <remcohaszing@gmail.com>",
+  "type": "module",
+  "bin": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "unified-language-server": "^1.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.0",
+    "remark-cli": "^10.0.0",
+    "remark-preset-wooorm": "^9.0.0",
+    "xo": "^0.47.0"
+  },
   "scripts": {
     "build": "tsc && type-coverage",
     "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
@@ -42,14 +50,5 @@
     "plugins": [
       "preset-wooorm"
     ]
-  },
-  "dependencies": {
-    "unified-language-server": "^1.0.0"
-  },
-  "devDependencies": {
-    "prettier": "^2.0.0",
-    "remark-cli": "^10.0.0",
-    "remark-preset-wooorm": "^9.0.0",
-    "xo": "^0.47.0"
   }
 }
