@@ -1,7 +1,6 @@
 # remark-language-server
 
 [![Build][build-badge]][build]
-[![Coverage][coverage-badge]][coverage]
 [![Downloads][downloads-badge]][downloads]
 [![Sponsors][sponsors-badge]][collective]
 [![Backers][backers-badge]][collective]
@@ -84,10 +83,6 @@ abide by its terms.
 [build-badge]: https://github.com/remarkjs/remark-language-server/workflows/main/badge.svg
 
 [build]: https://github.com/remarkjs/remark-language-server/actions
-
-[coverage-badge]: https://img.shields.io/codecov/c/github/remarkjs/remark-language-server.svg
-
-[coverage]: https://codecov.io/github/remarkjs/remark-language-server
 
 [downloads-badge]: https://img.shields.io/npm/dm/remark-cli.svg
 
