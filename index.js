@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import process from 'process'
+import process from 'node:process'
 import {createUnifiedLanguageServer} from 'unified-language-server'
 
 process.title = 'remark-language-server'

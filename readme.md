@@ -11,13 +11,13 @@ A language server to lint and format markdown files with **[remark][]**.
 
 ## Contents
 
-- [What is this?](#what-is-this)
-- [When should I use this?](#when-should-i-use-this)
-- [Install](#install)
-- [Use](#use)
-- [Compatibility](#compatibility)
-- [Contribute](#contribute)
-- [License](#license)
+*   [What is this?](#what-is-this)
+*   [When should I use this?](#when-should-i-use-this)
+*   [Install](#install)
+*   [Use](#use)
+*   [Compatibility](#compatibility)
+*   [Contribute](#contribute)
+*   [License](#license)
 
 ## What is this?
 
@@ -82,24 +82,45 @@ abide by its terms.
 <!-- Definitions -->
 
 [build-badge]: https://github.com/remarkjs/remark-language-server/workflows/main/badge.svg
+
 [build]: https://github.com/remarkjs/remark-language-server/actions
+
 [coverage-badge]: https://img.shields.io/codecov/c/github/remarkjs/remark-language-server.svg
+
 [coverage]: https://codecov.io/github/remarkjs/remark-language-server
+
 [downloads-badge]: https://img.shields.io/npm/dm/remark-cli.svg
+
 [downloads]: https://www.npmjs.com/package/remark-cli
+
 [sponsors-badge]: https://opencollective.com/unified/sponsors/badge.svg
+
 [backers-badge]: https://opencollective.com/unified/backers/badge.svg
+
 [collective]: https://opencollective.com/unified
+
 [chat-badge]: https://img.shields.io/badge/chat-discussions-success.svg
+
 [chat]: https://github.com/remarkjs/remark/discussions
+
 [health]: https://github.com/remarkjs/.github
+
 [contributing]: https://github.com/remarkjs/.github/blob/main/contributing.md
+
 [support]: https://github.com/remarkjs/.github/blob/main/support.md
+
 [coc]: https://github.com/remarkjs/.github/blob/main/code-of-conduct.md
+
 [license]: https://github.com/remarkjs/remark-language-server/blob/main/license
+
 [author]: https://github.com/remcohaszing
+
 [npm]: https://docs.npmjs.com/cli/install
+
 [language server]: https://microsoft.github.io/language-server-protocol/
+
 [remark]: https://github.com/remarkjs/remark
+
 [remark-cli]: https://github.com/remarkjs/remark/tree/main/packages/remark-cli
+
 [vscode-languageserver-node]: https://github.com/microsoft/vscode-languageserver-node/tree/main/server
