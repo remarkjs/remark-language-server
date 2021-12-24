@@ -13,9 +13,16 @@
     "remark",
     "unified"
   ],
-  "repository": "https://github.com/remarkjs/remark/tree/main/packages/remark-language-server",
+  "repository": "remarkjs/remark-language-server",
   "bugs": "https://github.com/remarkjs/remark-language-serve/issues",
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/unified"
+  },
   "author": "Remco Haszing <remcohaszing@gmail.com>",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
+  ],
   "type": "module",
   "bin": "index.js",
   "files": [
@@ -28,6 +35,7 @@
     "prettier": "^2.0.0",
     "remark-cli": "^10.0.0",
     "remark-preset-wooorm": "^9.0.0",
+    "type-coverage": "^2.0.0",
     "xo": "^0.47.0"
   },
   "scripts": {
@@ -50,5 +58,11 @@
     "plugins": [
       "preset-wooorm"
     ]
+  },
+  "typeCoverage": {
+    "atLeast": 100,
+    "detail": true,
+    "strict": true,
+    "ignoreCatch": true
   }
 }
