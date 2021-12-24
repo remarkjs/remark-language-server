@@ -79,9 +79,9 @@ abide by its terms.
 
 [build]: https://github.com/remarkjs/remark-language-server/actions
 
-[downloads-badge]: https://img.shields.io/npm/dm/remark-cli.svg
+[downloads-badge]: https://img.shields.io/npm/dm/remark-language-server.svg
 
-[downloads]: https://www.npmjs.com/package/remark-cli
+[downloads]: https://www.npmjs.com/package/remark-language-server
 
 [sponsors-badge]: https://opencollective.com/unified/sponsors/badge.svg
 
