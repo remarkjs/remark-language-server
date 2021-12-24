@@ -13,9 +13,16 @@
     "remark",
     "unified"
   ],
-  "repository": "https://github.com/remarkjs/remark/tree/main/packages/remark-language-server",
+  "repository": "remarkjs/remark-language-server",
   "bugs": "https://github.com/remarkjs/remark-language-serve/issues",
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/unified"
+  },
   "author": "Remco Haszing <remcohaszing@gmail.com>",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
+  ],
   "type": "module",
   "bin": "index.js",
   "files": [
