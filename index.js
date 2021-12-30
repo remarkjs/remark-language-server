@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import process from 'node:process'
+import {remark} from 'remark'
 import {createUnifiedLanguageServer} from 'unified-language-server'
 
 process.title = 'remark-language-server'
@@ -8,6 +9,6 @@ createUnifiedLanguageServer({
   ignoreName: '.remarkignore',
   packageField: 'remarkConfig',
   pluginPrefix: 'remark',
-  plugins: ['remark-parse', 'remark-stringify'],
+  processor: remark,
   rcName: '.remarkrc'
 })

@@ -29,6 +29,7 @@
     "index.js"
   ],
   "dependencies": {
+    "remark": "^14.0.0",
     "unified-language-server": "^1.0.0"
   },
   "devDependencies": {
