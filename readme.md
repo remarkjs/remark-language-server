@@ -43,13 +43,55 @@ npm install remark-language-server
 
 Usage of this package depends on your editor integration.
 Because this is based on
-[`vscode-languageserver-node`][vscode-languageserver-node], the same transports
+[`unified-languageserver-node`][unified-languageserver-node], the same features
 are supported.
-
-Practical examples are coming soon.
 
 `remark-language-server` uses the same configuration files as
 [`remark-cli`][remark-cli].
+
+## Examples
+
+### Atom
+
+The [`linter-remark`][linter-remark] plugin for Atom uses remark language server.
+It can be installed with:
+
+```sh
+apm install linter-remark
+```
+
+### Emacs
+
+The remark language server has been registerd with [Emacs `lsp-mode`][lsp-mode].
+
+### Neovim
+
+The remark language server has been registerd with [`nvim-lspconfig`][nvim-lspconfig].
+This means it’s available by default in Neovim.
+
+### Vim-lsp
+
+The remark language server can be used with [`vim-lsp`][vim-lsp].
+You can configure it to be started when a markdown file is opened.
+
+```viml
+if (executable('remark-language-server'))
+  au User lsp_setup call lsp#register_server({
+  \ 'name': 'remark',
+  \ 'cmd': {server_info->['remark-language-server', '--stdio']},
+  \ 'allowlist': ['markdown'],
+  \ })
+endif
+```
+
+It has also been registered with [`vim-lsp-settings`][vim-lsp-settings].
+If you use this, you will be prompted to use the remark language server when a
+markdown file is opened.
+
+### Visual Studio Code
+
+The [remark extension for Visual Studio Code][vscode-remark] uses remark
+language server under the hood.
 
 ## Compatibility
 
@@ -97,6 +139,10 @@ abide by its terms.
 
 [contributing]: https://github.com/remarkjs/.github/blob/main/contributing.md
 
+[linter-remark]: https://github.com/wooorm/linter-remark
+
+[lsp-mode]: https://github.com/emacs-lsp/lsp-mode
+
 [support]: https://github.com/remarkjs/.github/blob/main/support.md
 
 [coc]: https://github.com/remarkjs/.github/blob/main/code-of-conduct.md
@@ -107,10 +153,18 @@ abide by its terms.
 
 [npm]: https://docs.npmjs.com/cli/install
 
+[nvim-lspconfig]: https://github.com/neovim/nvim-lspconfig
+
 [language server]: https://microsoft.github.io/language-server-protocol/
 
 [remark]: https://github.com/remarkjs/remark
 
 [remark-cli]: https://github.com/remarkjs/remark/tree/main/packages/remark-cli
 
-[vscode-languageserver-node]: https://github.com/microsoft/vscode-languageserver-node/tree/main/server
+[unified-languageserver-node]: https://github.com/unifiedjs/unified-language-server
+
+[vim-lsp]: https://github.com/prabirshrestha/vim-lsp
+
+[vim-lsp-settings]: https://github.com/mattn/vim-lsp-settings
+
+[vscode-remark]: https://github.com/remarkjs/vscode-remark
