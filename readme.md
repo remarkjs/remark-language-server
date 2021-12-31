@@ -91,8 +91,8 @@ markdown file is opened.
 
 ### Visual Studio Code
 
-The [remark extension for Visual Studio Code][vscode-remark] uses remark
-language server under the hood.
+Use [`vscode-remark`][vscode-remark] to use the remark language server with
+Visual Studio Code.
 
 ## Compatibility
 
