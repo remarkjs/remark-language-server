@@ -62,7 +62,7 @@ apm install linter-remark
 
 ### Emacs
 
-The remark language server has been registerd with [Emacs `lsp-mode`][lsp-mode].
+Use [`lsp-mode`][lsp-mode] to use the remark language server with Emacs.
 
 ### Neovim
 
