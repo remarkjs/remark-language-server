@@ -66,8 +66,9 @@ Use [`lsp-mode`][lsp-mode] to use the remark language server with Emacs.
 
 ### Neovim
 
-The remark language server has been registerd with [`nvim-lspconfig`][nvim-lspconfig].
-This means it’s available by default in Neovim.
+Use [`nvim-lspconfig`][nvim-lspconfig] to use the remark language server with
+Neovim.
+It’s enabled by default.
 
 ### vim-lsp
 
