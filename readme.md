@@ -69,7 +69,7 @@ Use [`lsp-mode`][lsp-mode] to use the remark language server with Emacs.
 The remark language server has been registerd with [`nvim-lspconfig`][nvim-lspconfig].
 This means it’s available by default in Neovim.
 
-### Vim-lsp
+### vim-lsp
 
 The remark language server can be used with [`vim-lsp`][vim-lsp].
 You can configure it to be started when a markdown file is opened.
