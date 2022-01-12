@@ -8,6 +8,7 @@ createUnifiedLanguageServer({
   ignoreName: '.remarkignore',
   packageField: 'remarkConfig',
   pluginPrefix: 'remark',
-  plugins: ['remark-parse', 'remark-stringify'],
+  processorName: 'remark',
+  processorSpecifier: 'remark',
   rcName: '.remarkrc'
 })
