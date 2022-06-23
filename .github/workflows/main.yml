@@ -16,5 +16,5 @@ jobs:
     strategy:
       matrix:
         node:
-          - lts/erbium
-          - node
+          - lts/fermium
+          - lts/gallium
