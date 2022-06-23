@@ -33,7 +33,7 @@ consume this package.
 ## Install
 
 This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c).
-In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
+In Node.js (version 14.14+, or 16.0+), install with [npm][]:
 
 ```sh
 npm install remark-language-server
@@ -55,7 +55,7 @@ Practical examples are coming soon.
 
 Projects maintained by the unified collective are compatible with all maintained
 versions of Node.js.
-As of now, that is Node.js 12.20+, 14.14+, and 16.0+.
+As of now, that is Node.js 14.14+, and 16.0+.
 Our projects sometimes work with older versions, but this is not guaranteed.
 
 ## Contribute
