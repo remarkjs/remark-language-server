@@ -50,6 +50,7 @@ Practical examples are coming soon.
 
 `remark-language-server` uses the same configuration files as
 [`remark-cli`][remark-cli].
+Language clients should notify the language server if these files change.
 
 ## Compatibility
 
