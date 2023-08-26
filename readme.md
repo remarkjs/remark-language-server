@@ -62,7 +62,10 @@ Use [`lsp-mode`][lsp-mode] to use the remark language server with Emacs.
 
 ### Neovim
 
-The remark language server is part of [`nvim-lspconfig`][nvim-lspconfig], a collection of common configurations for Neovim's built-in language server client. This means you can add remark language server in one line:
+The remark language server is part of [`nvim-lspconfig`][nvim-lspconfig], a
+collection of common configurations for Neovim’s built-in language server
+client.
+This means you can add remark language server in one line:
 
 ```lua
 require'lspconfig'.remark_ls.setup{}
@@ -139,8 +142,6 @@ abide by its terms.
 [health]: https://github.com/remarkjs/.github
 
 [contributing]: https://github.com/remarkjs/.github/blob/main/contributing.md
-
-[linter-remark]: https://github.com/wooorm/linter-remark
 
 [lsp-mode]: https://github.com/emacs-lsp/lsp-mode
 
