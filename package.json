@@ -32,15 +32,15 @@
     "unified-language-server": "^3.0.0"
   },
   "devDependencies": {
-    "prettier": "^2.0.0",
+    "prettier": "^3.0.0",
     "remark-cli": "^11.0.0",
     "remark-preset-wooorm": "^9.0.0",
     "type-coverage": "^2.0.0",
-    "xo": "^0.50.0"
+    "xo": "^0.56.0"
   },
   "scripts": {
     "build": "tsc && type-coverage",
-    "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
+    "format": "remark . -qfo && prettier . -w --log-level warn && xo --fix",
     "test": "npm run build && npm run format"
   },
   "prettier": {
