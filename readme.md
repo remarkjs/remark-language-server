@@ -14,6 +14,11 @@ A language server to lint and format markdown files with **[remark][]**.
 *   [When should I use this?](#when-should-i-use-this)
 *   [Install](#install)
 *   [Use](#use)
+*   [Examples](#examples)
+    *   [Emacs](#emacs)
+    *   [Neovim](#neovim)
+    *   [vim-lsp](#vim-lsp)
+    *   [Visual Studio Code](#visual-studio-code)
 *   [Compatibility](#compatibility)
 *   [Contribute](#contribute)
 *   [License](#license)
@@ -50,15 +55,6 @@ are supported.
 [`remark-cli`][remark-cli].
 
 ## Examples
-
-### Atom
-
-The [`linter-remark`][linter-remark] plugin for Atom uses remark language server.
-It can be installed with:
-
-```sh
-apm install linter-remark
-```
 
 ### Emacs
 
