@@ -71,7 +71,9 @@ This means you can add remark language server in one line:
 require'lspconfig'.remark_ls.setup{}
 ```
 
-`nvim-lspconfig` has [detailed installation instructions](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#remark_ls) such as configuration options.
+`nvim-lspconfig` has
+[detailed installation instructions][nvim-lspconfig-instructions] such as
+configuration options.
 
 ### vim-lsp
 
@@ -155,6 +157,8 @@ abide by its terms.
 [npm]: https://docs.npmjs.com/cli/install
 
 [nvim-lspconfig]: https://github.com/neovim/nvim-lspconfig
+
+[nvim-lspconfig-instructions]: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#remark_ls
 
 [language server]: https://microsoft.github.io/language-server-protocol/
 
