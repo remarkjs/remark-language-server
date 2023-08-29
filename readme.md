@@ -71,7 +71,7 @@ This means you can add remark language server in one line:
 require'lspconfig'.remark_ls.setup{}
 ```
 
-Detailed installation instructions can be found [here](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#remark_ls).
+`nvim-lspconfig` has [detailed installation instructions](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#remark_ls) such as configuration options.
 
 ### vim-lsp
 
@@ -88,9 +88,8 @@ if (executable('remark-language-server'))
 endif
 ```
 
-It has also been registered with [`vim-lsp-settings`][vim-lsp-settings].
-If you use this, you will be prompted to use the remark language server when a
-markdown file is opened.
+Otherwise, if you use [`vim-lsp-settings`][vim-lsp-settings], you will be asked
+to use the remark language server automatically when a markdown file is opened.
 
 ### Visual Studio Code
 
