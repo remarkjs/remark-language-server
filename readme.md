@@ -50,7 +50,20 @@ Practical examples are coming soon.
 
 `remark-language-server` uses the same configuration files as
 [`remark-cli`][remark-cli].
+These files are:
+
+*   `.remarkrc`
+*   `.remarkrc.cjs`
+*   `.remarkrc.js`
+*   `.remarkrc.json`
+*   `.remarkrc.mjs`
+*   `.remarkrc.yaml`
+*   `.remarkrc.yml`
+*   `.package.json`
+
 Language clients should notify the language server if these files change.
+They are looked up starting at the folder where the checked markdown file
+exists.
 
 ## Compatibility
 
