@@ -14,6 +14,11 @@ A language server to lint and format markdown files with **[remark][]**.
 *   [When should I use this?](#when-should-i-use-this)
 *   [Install](#install)
 *   [Use](#use)
+*   [Examples](#examples)
+    *   [Emacs](#emacs)
+    *   [Neovim](#neovim)
+    *   [vim-lsp](#vim-lsp)
+    *   [Visual Studio Code](#visual-studio-code)
 *   [Compatibility](#compatibility)
 *   [Contribute](#contribute)
 *   [License](#license)
@@ -43,13 +48,55 @@ npm install remark-language-server
 
 Usage of this package depends on your editor integration.
 Because this is based on
-[`vscode-languageserver-node`][vscode-languageserver-node], the same transports
+[`unified-languageserver-node`][unified-languageserver-node], the same features
 are supported.
-
-Practical examples are coming soon.
 
 `remark-language-server` uses the same configuration files as
 [`remark-cli`][remark-cli].
+
+## Examples
+
+### Emacs
+
+Use [`lsp-mode`][lsp-mode] to use the remark language server with Emacs.
+
+### Neovim
+
+The remark language server is part of [`nvim-lspconfig`][nvim-lspconfig], a
+collection of common configurations for Neovim’s built-in language server
+client.
+This means you can add remark language server in one line:
+
+```lua
+require'lspconfig'.remark_ls.setup{}
+```
+
+`nvim-lspconfig` has
+[detailed installation instructions][nvim-lspconfig-instructions] such as
+configuration options.
+
+### vim-lsp
+
+The remark language server can be used with [`vim-lsp`][vim-lsp].
+You can configure it to be started when a markdown file is opened.
+
+```viml
+if (executable('remark-language-server'))
+  au User lsp_setup call lsp#register_server({
+  \ 'name': 'remark',
+  \ 'cmd': {server_info->['remark-language-server', '--stdio']},
+  \ 'allowlist': ['markdown'],
+  \ })
+endif
+```
+
+Otherwise, if you use [`vim-lsp-settings`][vim-lsp-settings], you will be asked
+to use the remark language server automatically when a markdown file is opened.
+
+### Visual Studio Code
+
+Use [`vscode-remark`][vscode-remark] to use the remark language server with
+Visual Studio Code.
 
 ## Compatibility
 
@@ -97,6 +144,8 @@ abide by its terms.
 
 [contributing]: https://github.com/remarkjs/.github/blob/main/contributing.md
 
+[lsp-mode]: https://github.com/emacs-lsp/lsp-mode
+
 [support]: https://github.com/remarkjs/.github/blob/main/support.md
 
 [coc]: https://github.com/remarkjs/.github/blob/main/code-of-conduct.md
@@ -107,10 +156,20 @@ abide by its terms.
 
 [npm]: https://docs.npmjs.com/cli/install
 
+[nvim-lspconfig]: https://github.com/neovim/nvim-lspconfig
+
+[nvim-lspconfig-instructions]: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#remark_ls
+
 [language server]: https://microsoft.github.io/language-server-protocol/
 
 [remark]: https://github.com/remarkjs/remark
 
 [remark-cli]: https://github.com/remarkjs/remark/tree/main/packages/remark-cli
 
-[vscode-languageserver-node]: https://github.com/microsoft/vscode-languageserver-node/tree/main/server
+[unified-languageserver-node]: https://github.com/unifiedjs/unified-language-server
+
+[vim-lsp]: https://github.com/prabirshrestha/vim-lsp
+
+[vim-lsp-settings]: https://github.com/mattn/vim-lsp-settings
+
+[vscode-remark]: https://github.com/remarkjs/vscode-remark
