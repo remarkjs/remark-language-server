@@ -59,7 +59,7 @@ These files are:
 *   `.remarkrc.mjs`
 *   `.remarkrc.yaml`
 *   `.remarkrc.yml`
-*   `.package.json`
+*   `package.json`
 
 Language clients should notify the language server if these files change.
 They are looked up starting at the folder where the checked markdown file
