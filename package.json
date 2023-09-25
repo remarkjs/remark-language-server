@@ -29,7 +29,7 @@
     "index.js"
   ],
   "dependencies": {
-    "unified-language-server": "^3.0.0"
+    "unified-language-server": "^4.0.0"
   },
   "devDependencies": {
     "prettier": "^3.0.0",

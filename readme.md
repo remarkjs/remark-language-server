@@ -14,6 +14,8 @@ A language server to lint and format markdown files with **[remark][]**.
 *   [When should I use this?](#when-should-i-use-this)
 *   [Install](#install)
 *   [Use](#use)
+    *   [Configuration file](#configuration-file)
+    *   [Settings](#settings)
 *   [Examples](#examples)
     *   [Emacs](#emacs)
     *   [Neovim](#neovim)
@@ -51,6 +53,8 @@ Because this is based on
 [`unified-languageserver-node`][unified-languageserver-node], the same features
 are supported.
 
+### Configuration file
+
 `remark-language-server` uses the same configuration files as
 [`remark-cli`][remark-cli].
 These files are:
@@ -68,6 +72,13 @@ Language clients should notify the language server if these files change.
 They are looked up starting at the folder where the checked markdown file
 exists.
 
+### Settings
+
+This language server supports the following settings:
+
+*   `remark.requireConfig` (`boolean`, default: `false`) — If true, only perform
+    actions if a [configuration file][configuration-file] is found.
+
 ## Examples
 
 ### Emacs
@@ -82,7 +93,11 @@ client.
 This means you can add remark language server in one line:
 
 ```lua
-require'lspconfig'.remark_ls.setup{}
+require'lspconfig'.remark_ls.setup {
+  settings = {
+    requireConfig = true
+  }
+}
 ```
 
 `nvim-lspconfig` has
@@ -100,6 +115,10 @@ if (executable('remark-language-server'))
   \ 'name': 'remark',
   \ 'cmd': {server_info->['remark-language-server', '--stdio']},
   \ 'allowlist': ['markdown'],
+  \ 'config': lsp_settings#get('remark-language-server', 'config', lsp_settings#server_config('remark-language-server')),
+  \ 'workspace_config': lsp_settings#get('remark-language-server', 'workspace_config', {
+  \   'requireConfig': v:true,
+  \ }),
   \ })
 endif
 ```
@@ -139,6 +158,8 @@ abide by its terms.
 [build-badge]: https://github.com/remarkjs/remark-language-server/workflows/main/badge.svg
 
 [build]: https://github.com/remarkjs/remark-language-server/actions
+
+[configuration-file]: #configuration-file
 
 [downloads-badge]: https://img.shields.io/npm/dm/remark-language-server.svg
 
