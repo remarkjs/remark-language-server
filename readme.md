@@ -10,20 +10,20 @@ A language server to lint and format markdown files with **[remark][]**.
 
 ## Contents
 
-*   [What is this?](#what-is-this)
-*   [When should I use this?](#when-should-i-use-this)
-*   [Install](#install)
-*   [Use](#use)
-    *   [Configuration file](#configuration-file)
-    *   [Settings](#settings)
-*   [Examples](#examples)
-    *   [Emacs](#emacs)
-    *   [Neovim](#neovim)
-    *   [vim-lsp](#vim-lsp)
-    *   [Visual Studio Code](#visual-studio-code)
-*   [Compatibility](#compatibility)
-*   [Contribute](#contribute)
-*   [License](#license)
+* [What is this?](#what-is-this)
+* [When should I use this?](#when-should-i-use-this)
+* [Install](#install)
+* [Use](#use)
+  * [Configuration file](#configuration-file)
+  * [Settings](#settings)
+* [Examples](#examples)
+  * [Emacs](#emacs)
+  * [Neovim](#neovim)
+  * [vim-lsp](#vim-lsp)
+  * [Visual Studio Code](#visual-studio-code)
+* [Compatibility](#compatibility)
+* [Contribute](#contribute)
+* [License](#license)
 
 ## What is this?
 
@@ -39,7 +39,7 @@ consume this package.
 
 ## Install
 
-This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c).
+This package is [ESM only][].
 In Node.js (version 16.0+, or 18.0+), install with [npm][]:
 
 ```sh
@@ -59,14 +59,14 @@ are supported.
 [`remark-cli`][remark-cli].
 These files are:
 
-*   `.remarkrc`
-*   `.remarkrc.cjs`
-*   `.remarkrc.js`
-*   `.remarkrc.json`
-*   `.remarkrc.mjs`
-*   `.remarkrc.yaml`
-*   `.remarkrc.yml`
-*   `package.json`
+* `.remarkrc`
+* `.remarkrc.cjs`
+* `.remarkrc.js`
+* `.remarkrc.json`
+* `.remarkrc.mjs`
+* `.remarkrc.yaml`
+* `.remarkrc.yml`
+* `package.json`
 
 Language clients should notify the language server if these files change.
 They are looked up starting at the folder where the checked markdown file
@@ -76,8 +76,8 @@ exists.
 
 This language server supports the following settings:
 
-*   `remark.requireConfig` (`boolean`, default: `false`) — If true, only perform
-    actions if a [configuration file][configuration-file] is found.
+* `remark.requireConfig` (`boolean`, default: `false`) — If true, only perform
+  actions if a [configuration file][configuration-file] is found.
 
 ## Examples
 
@@ -164,6 +164,8 @@ abide by its terms.
 [downloads-badge]: https://img.shields.io/npm/dm/remark-language-server.svg
 
 [downloads]: https://www.npmjs.com/package/remark-language-server
+
+[esm only]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
 
 [sponsors-badge]: https://opencollective.com/unified/sponsors/badge.svg
 
