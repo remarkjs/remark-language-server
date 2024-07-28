@@ -95,7 +95,9 @@ This means you can add remark language server in one line:
 ```lua
 require'lspconfig'.remark_ls.setup {
   settings = {
-    requireConfig = true
+    remark = {
+      requireConfig = true
+    }
   }
 }
 ```
